@@ -1,0 +1,137 @@
+// 变量
+$colorR1:#F50404;
+$colorG2:#027D1F;
+$colorY3:#C3C109;
+$color4:#fff;
+$color5:#333;
+$font-family: arial;
+//引入scss样式
+@import'discruption';
+
+body{
+	font-family:$font-family;
+	color:$color5;
+}
+
+.name{
+	line-height: 70px;
+    text-align: center;
+    font-size: 40px;
+    color:$colorR1;
+    font-weight: bolder;
+}
+.main{
+	.go{
+		height:80px;
+	    padding:15px 0;
+	}
+	.station{
+			height: 290px;
+			background: $colorG2;
+	}
+}
+.go{
+	.left{
+		  width: 150px;
+  		  height: 80px;
+          background:$colorR1;
+          float: left;
+          font-size:45px;
+ 		  color:$color4;
+          line-height: 90px;
+          text-align: center;
+	}
+	.right{
+		   height: 80px;
+	}
+}
+
+.right{
+	   .inner{
+	         height: 50px;
+			 margin-left: 120px;
+           .now{
+           		line-height: 50px;
+           		text-align: center;
+    			color:$colorG2 ;
+    			font-size: 30px;
+             }
+           .next{
+           		height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-weight: bolder;
+				font-size: 18px;
+				letter-spacing: 3px;
+				white-space: 6px;
+           }
+	   }
+}
+@mixin write-mode($style1,$style2){
+		writing-mode:$style1;
+		writing-mode:$style2;
+   		-webkit-writing-mode:$style2;
+		-moz-writing-mode:$style2;
+		-o-writing-mode:$style2;
+		-ms-writing-mode:$style2;
+}
+.station{
+	ul{
+		list-style: none;
+		li{
+		   float:left;
+		   width: 3.02%;
+		   height: 290px;
+		   padding-top: 30px;
+		   box-sizing:border-box;
+		   color:$color4;
+		   opacity: 0.7;
+		   @include write-mode(lr-tb,vertical-lr) ;
+		}
+	}
+}
+.foot{
+	.nextstation{
+				line-height: 40px;
+			    font-size: 18px;
+			    color:$color5 ;
+			    text-align: center;
+	}
+	.icon{
+		  width: 600px;
+ 		  height: 10px;
+          margin:0 auto;
+          position: absolute;
+          bottom: 8px;
+          left: 50%;
+          margin-left: -300px;
+	}
+}
+.nextstation{
+	span{
+		margin:0 20px;
+	}
+}
+.icon{
+	.icon1{
+			width: 560px;
+  			height: 10px;
+  			background:$colorR1;
+  			position: absolute;
+  			left:0;
+  			top:0;
+	}
+}
+.icon1{
+	.icon2{
+			width: 0px;
+	 		height: 0px;
+	 		border-top: 9px solid transparent;
+	  		border-bottom:9px solid $colorR1;
+	   		border-left: 30px solid $colorR1;
+	    	border-right: 30px solid transparent;
+	    	position: absolute;
+	    	right:-40px;
+	    	bottom:0px;
+	}
+}

@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body { 
+font-size:12px; 
+font-family:Arial, Georgia, "Times New Roman", Times, serif; 
+color:#555; 
+text-align:center; 
+background-color:#555; 
+} 
+
+.container{
+	width: 500px;
+	height: 560px;
+	border: 1px solid #EDEDF5;
+	margin: 50px auto;
+}
+
+.computer{
+	width:300px;
+	height: 410px;
+	border: 1px solid #555;
+	padding: 15px 20px;
+	margin:60px  auto;
+	background: #ffffff;
+	box-shadow: 0 0 10px #555 inset;
+}
+.computer .title h3{
+	font-size: 20px;
+}
+
+.computer .main .screen{
+	clear:both;
+}
+
+.screen input{
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid #8BEFE3;
+	box-shadow: 1px 1px 1px #8BEFE3;
+	font-size: 18px;
+	color: black;
+	text-indent: 5px;
+	outline: none;
+	cursor: help;
+	margin-top: 10px;
+}
+
+.computer .main .btn {
+	width: 260px;
+	height: 280px;
+	border: 1px solid #8BEFE3;
+	box-shadow: 0 0 1px #8BEFE3;
+	margin-top: 15px;
+	padding: 12px 0;
+}
+.computer .main .btn ul{
+	list-style: none;
+	width: 260px;
+	height: auto;
+}
+
+.computer .main .btn li{
+	float: left;
+	width: 46px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 15px;
+	color: black;
+	font-weight:bold;
+	margin: 9px;
+	background: linear-gradient(to top, #ffffff,#30DE41 70%, #ffffff);
+	opacity: 0.6;
+}
+
+.computer .main .btn li:hover{
+	box-shadow:0 0 4px #1B8C26;
+	cursor: pointer;
+}
+.computer .main .btn li:active{
+	box-shadow:0 0 4px #ffffff;
+	cursor: pointer;
+	background: #16BF26;
+}

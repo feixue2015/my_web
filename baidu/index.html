@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>百度一下,你就知道</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    <div class="top-nav">
+      <ul>
+        <li><a href="">新闻</a></li>
+        <li><a href="">好123</a></li>
+        <li><a href="">地图</a></li>
+        <li><a href="">视频</a></li>
+        <li><a href="">贴吧</a></li>
+        <li class="online"><a href="">登陆</a></li>
+        <li class="set"><a class="set-box" href="">设置</a>
+          <div class="tip">
+            <ul>
+              <li><a href="">搜索设置</a></li>
+              <li><a href="">高级搜索</a></li>
+              <li><a href="">关闭预测</a></li>
+              <li><a href="">搜索历史</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="more">
+          <a href="">更多产品</a>
+          <ul>
+            <li class="more-1">
+              <a href="">
+                更多产品
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image1"></span>
+                糯米
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image2"></span>
+                知道
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image3"></span>
+                音乐
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image4"></span>
+                图片
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image5"></span>
+                文库
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image6"></span>
+                风云榜
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="image7"></span>
+                百度推广
+              </a>
+            </li>
+            <li>
+              <a class="search-more"href="">
+                全部产品
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="middle">
+       <div class="img-box">
+           <img src="images/bd_logo1.png" alt="百度LOGO" width="270px" height="129px"/> 
+       </div>
+      <div class="search">
+          <span class="search-1">
+              <input class="search-1-1" id="search1" type="text">
+              <ul id="ulist">
+              </ul>
+        </span>
+          <span class="search-2">
+              <a href=""><input class="search-2-2" id="search2" type="submit" value="百度一下"></a>
+          </span>
+      </div>
+  </div>
+
+
+  <div class="play">  <!-- 导航主体 -->
+    <div class="play-box">
+      <div class="play-nav">   <!--  导航头 -->
+        <span class="action">
+          <div class="action-icon"></div>
+          <span class="navlist">我的关注</span>
+        </span>
+        <div class="choose">
+          <span class="navlist">推荐</span>
+          <span class="navlist">视频</span>
+          <span class="navlist">购物</span>
+        </div>
+        <div class="nav-space"></div>
+        <span class="reset" title="设置">
+          <div class="reset-icon"></div>
+        </span>
+      </div><!--  导航头 -->
+    <div class="type-box" style="display:block">
+      <div class="play-main">  <!--  我的关注内容 -->
+        <div class="main-box">
+          <div class="main-my">
+            <div class="mynav1">
+              <div class="mynav1-icon"><em ></em></div>
+              <span class="mynav_1">我的导航</span>
+              
+              <span class="count-times">(
+                <span>0</span>
+                )</span>
+            </div>
+            <div class="mynav2">
+              <div class="add" title="添加">添加</div>
+              <div class="return">
+                <span class="returxian-icon"></span>
+                <span class="return-text">返利模式</span>
+              </div>
+              <div class="set-top">置顶</div>
+            </div>
+          </div>
+
+            <div class="main-write"> <!-- 关注添加部分  -->
+            <div class="write-box">
+              <div class="write-bg"></div>
+              <div class="write-add">
+                <div class="add-title">
+                  <div class="add-icon">
+                    <span></span>
+                  </div>
+                  <div class="add-text">
+                  自定义
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>  <!--  我的关注内容 -->
+    </div>
+    <div class="type-box">
+      <div class="recommend-box"><!-- 推荐内容 -->
+        <div class="recommend">
+          <div class="recommend-image">
+            <div class="image1">
+              <div class="image1-line1"></div>
+              <div class="image1-icon"></div>
+              <span class="image1-font">以下信息根据您的兴趣推荐
+              </span>
+              <div class="image1-line2"></div>
+            </div>
+            <div class="image2">
+              <div class="image2-new1">
+                <span></span>
+                <a href="">  彭丽媛参观皇家音乐学院 观赏莫扎特和肖邦手稿</a>
+              </div>
+              <div class="image2-new2">
+                <span><a href="">搜狐体育</a></span>
+                <span>10-23 12:55</span>
+              </div>
+            </div>
+            <div class="image2">
+              <div class="image2-new1">
+                <span></span>
+                <a href=""> 海宁赛-丁俊晖4-2胜罗伯特森 进决赛将战沃尔顿</a>
+              </div>
+              <div class="image2-new2">
+                <span><a href="">搜狐体育</a></span>
+                <span>10-23 13:42</span>
+              </div>
+            </div>
+            <div class="image2">
+              <div class="image2-new1">
+                <a href="">  三少年残忍打死女教师 因未满14岁不担刑责</a>
+              </div>
+              <div class="image2-new2">
+                <span><a href="">搜狐体育</a></span>
+                <span>10-22 22:34</span>
+              </div>
+            </div>
+          </div>
+          <div class="recommend-news">
+            <div class="news1">
+              <span class="hot"><a href="">实时热点</a></span>
+              <div class="change">
+                <span></span>
+                <span>换一换</span>
+              </div>
+            </div>
+            <div class="news2">
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="">警方破获电信诈骗</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">老人自称捕到神兽</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">男子遭女网友监控</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">李冰冰支持baby</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">朝鲜女服务员走红</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">相思鸟集体自杀</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">夏洛超越泰囧票房</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">女子溺水男友离开</a>
+                    <span></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="">潘玮柏带儿子现身</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">老人自称捕到神兽</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">男子遭女网友监控</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">李冰冰支持baby</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">朝鲜女服务员走红</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">相思鸟集体自杀</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">夏洛超越泰囧票房</a>
+                    <span></span>
+                  </li>
+                  <li>
+                    <a href="">女子溺水男友离开</a>
+                    <span></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- 推荐内容 -->
+    </div>
+
+
+
+    <div class="type-box">
+      <div class="mv-box"><!-- 视频内容 -->
+        <div class="mv">
+          <div class="mv-list">
+            <div class="list">
+              <div class="list1-box1">
+                <div class="list1-box1-1">
+                  <a href=""><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3525449845,1009170465&fm=58"/></a>
+                </div>
+                <div class="list1-box1-2">
+                  <div class="mv-name">
+                    <a href="">宫锁沉香</a>
+                  </div>
+                  <span class="star">
+                    <span></span>
+                  </span>
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list1-box1">
+                <div class="list1-box1-1">
+                  <a href=""><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3843842729,1530046082&fm=58" /></a>
+                </div>
+                <div class="list1-box1-2">
+                  <div class="mv-name">
+                    <a href="">银魂</a>
+                  </div>
+                  <span class="star">
+                    <span></span>
+                  </span>
+                  9.6
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list2-box1">
+                <div class="list2-box">
+                  <div class="list2-box-1">
+                    <a href=""><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=425169052,2761152740&fm=58"/></a>
+                  </div>
+                  <div class="list2-box-2">
+                    <a href="">中国联通：国际漫游资费或将再降</a>
+                  </div>
+                </div>
+                <div class="list2-box">
+                  <div class="list2-box-1">
+                    <a href=""><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1532230201,3591536165&fm=58"/></a>
+                  </div>
+                  <div class="list2-box-2">
+                    <a href="">张 锐 时趣SocialTouch创始人及CEO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list2-box1">
+                <div class="list2-box">
+                  <div class="list2-box-1">
+                    <a href=""><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=684181032,2894692965&fm=58"/></a>
+                  </div>
+                  <div class="list2-box-2">
+                    <a href="">内地死亡游客疑参加黑旅游团 嫌犯今受审</a>
+                  </div>
+                </div>
+                <div class="list2-box">
+                  <div class="list2-box-1">
+                    <a href=""><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1883358048,3345000866&fm=58"/></a>
+                  </div>
+                  <div class="list2-box-2">
+                    <a href="">女子报警花10万元买假币得冥币 被警方刑拘</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 视频内容 -->
+    </div>
+
+    <div class="type-box">
+      <div class="shopping"><!-- 购物内容 -->
+        <div class="shopping-box">
+          <div class="shopping-nav">
+            <div class="today">
+              <span>今日优选</span>
+            </div>
+            <div class="favorite">
+              <span>美食</span>
+              <span>电影</span>
+              <span>娱乐</span>
+              <span>酒店</span>
+            </div>
+            <div class="my-shop">
+              <span class="account">
+                <span class="account-text">我的账户</span>
+                <span class="account-icon"></span>
+              </span>
+              <span class="more"><a href="">更多团购</a></span>
+            </div>
+          </div>
+          <div class="shopping-main">
+            <div class="picture">
+              <div class="pic">
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=7898fe912bf5e0feee4d81066e50189c/d62a6059252dd42aa0b3f023053b5bb5c8eab884.jpg" />
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">北京东方盛宾馆</a>
+                      <p><em>24</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>218</em></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=e4c859b21fd8bc3ec65d0ecdb0bb8a2a/b3119313b07eca80ed71d56f972397dda04483c6.jpg" />
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">北京兆龙国际青年旅舍团结湖地铁站店</a>
+                      <p><em>87</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>78</em></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=17d955a0307adab43d851344b9e49f28/cc11728b4710b912273c1076c5fdfc03934522bd.jpg" />
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">北京汉雅快捷酒店</a>
+                      <p><em>132</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>129</em></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pic">
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=0d4139a74734970a47261828a7fafdfc/a044ad345982b2b77530c84c37adcbef77099b8f.jpg"/>
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">7天酒店北京天通苑北地铁站店</a>
+                      <p><em>10</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>167</em></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=86a15e72d7c8a786be7f42095539e509/0df431adcbef7609e888671728dda3cc7dd99eb3.jpg"/>
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">速8酒店北京西直门交大东路店</a>
+                      <p><em>65</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>218</em></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pic-list">
+                  <img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/wh%3D720%2C436/sign=90c244b133fae6cd0ce1a3663d832310/bd315c6034a85edf8a585ba54f540923dc54755b.jpg"/>
+                  <div class="pic-text">
+                    <div class="text1">
+                      <a href="">汉庭酒店北京望京店</a>
+                      <p><em>61</em>人团购  </p>
+                    </div>
+                    <div class="text2">
+                      <span>¥<em>269</em></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list-top">
+                <div class="list-topbox">
+                  <div class="top1">
+                    <span></span>
+                    <a href="">糯米多倍返最后疯抢</a>
+                  </div>
+                  <div class="top2">
+                    <a href="">爆品直降，下单最高返利7.5%</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list-main">
+                <div class="main">
+                  <dl>
+                    <dt></dt>
+                    <dd>
+                      <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/bainuo/crop%3D0%2C0%2C720%2C436%3Bw%3D720%3Bq%3D80/sign=9e48a88abf014a9095711cfd94471522/d009b3de9c82d1584ce04e89860a19d8bc3e42a3.jpg">
+                        <span>魏家凉皮20元代金券</span></a>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="main"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- 购物内容 -->
+    </div>  
+  </div><!-- 导航主体 -->
+</div>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
